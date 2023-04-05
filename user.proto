@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package="./pb";
+
+package pb;
+
+message UserRequest {
+  repeated int32 id = 1;
+}
+
+message UserResponse {
+  int32 id = 1;
+  optional string username = 2;
+  repeated string area = 3;
+}
+
+service UserService {
+  //rpc 服务的函数名 （传入参数）返回（返回参数）
+  rpc Search (UserRequest) returns (UserResponse);
+}
