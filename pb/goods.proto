@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package="./goods";
+
+package goods;
+
+message GoodsRequest {
+  repeated int64 id = 1;
+}
+
+message GoodsResponse {
+  repeated GoodsInfo list = 1;
+}
+
+message GoodsInfo {
+    int64 id = 1;
+    string name = 2;
+    repeated string tags = 3;
+}
+
+service GoodsService {
+  //rpc 服务的函数名 （传入参数）返回（返回参数）
+  rpc Find (GoodsRequest) returns (GoodsResponse);
+}

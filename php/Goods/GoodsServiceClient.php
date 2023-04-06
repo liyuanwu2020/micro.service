@@ -1,11 +1,11 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Pb;
+namespace Goods;
 
 /**
  */
-class UserServiceClient extends \Grpc\BaseStub {
+class GoodsServiceClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -18,16 +18,16 @@ class UserServiceClient extends \Grpc\BaseStub {
 
     /**
      * rpc 服务的函数名 （传入参数）返回（返回参数）
-     * @param \Pb\UserRequest $argument input argument
+     * @param \Goods\GoodsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function Search(\Pb\UserRequest $argument,
+    public function Find(\Goods\GoodsRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/pb.UserService/Search',
+        return $this->_simpleRequest('/goods.GoodsService/Find',
         $argument,
-        ['\Pb\UserResponse', 'decode'],
+        ['\Goods\GoodsResponse', 'decode'],
         $metadata, $options);
     }
 
