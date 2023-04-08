@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mszlu\\Pb\\": "src/"
+            "Mszlu\\Pb\\": "src/Mszlu/Pb"
         }
     },
     "authors": [

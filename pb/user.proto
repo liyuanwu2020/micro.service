@@ -1,8 +1,12 @@
 syntax = "proto3";
 
 option go_package="./user";
+option php_generic_services=true;
+option php_class_prefix="";
+option php_metadata_namespace="Mszlu\\Pb\\GPBMetadata";
+option php_namespace="Mszlu\\Pb\\User";
 
-package Mszlu.Pb.user;
+package user;
 
 message UserRequest {
   repeated int32 id = 1;
