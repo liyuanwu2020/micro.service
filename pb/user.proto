@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package="./user";
 
-package user;
+package Mszlu.Pb.user;
 
 message UserRequest {
   repeated int32 id = 1;

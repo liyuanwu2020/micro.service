@@ -1,0 +1,21 @@
+{
+    "name": "mszlu/pb",
+    "description": "protobuffer",
+    "type": "library",
+    "require": {
+        "grpc/grpc": "1.52",
+        "google/protobuf": "3.22"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mszlu\\Pb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "liyuanwu",
+            "email": "16619891743@163.com"
+        }
+    ]
+}
