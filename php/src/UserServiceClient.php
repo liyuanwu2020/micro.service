@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Mszlu\Pb\User;
+namespace Mszlu\Pb;
 
 /**
  */
